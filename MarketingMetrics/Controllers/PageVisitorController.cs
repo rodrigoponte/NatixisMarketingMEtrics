@@ -42,7 +42,7 @@
         /// </summary>
         /// <param name="UrlPage">The UrlPage<see cref="string"/>.</param>
         /// <returns>The <see cref="IActionResult"/>.</returns>
-        [HttpGet]
+        [HttpGet("GetDistinctVisitorsPage")]
         [ProducesResponseType(typeof(VisitorPageResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
@@ -68,7 +68,7 @@
         /// </summary>
         /// <param name="visitor">The visitor<see cref="VisitorPageRequest"/>.</param>
         /// <returns>The <see cref="IActionResult"/>.</returns>
-        [HttpPost]
+        [HttpPost("SaveVisitorPage")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
