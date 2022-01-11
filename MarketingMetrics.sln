@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketingMetrics", "MarketingMetrics\MarketingMetrics.csproj", "{69C3BCB0-3AFA-4118-90DC-57C440D0EEB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketingMetrics", "MarketingMetrics\MarketingMetrics.csproj", "{69C3BCB0-3AFA-4118-90DC-57C440D0EEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketingMetrics_Test", "MarketingMetrics_Test\MarketingMetrics_Test.csproj", "{126240E7-E17D-4C0C-815D-5B7411D74327}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{69C3BCB0-3AFA-4118-90DC-57C440D0EEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C3BCB0-3AFA-4118-90DC-57C440D0EEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C3BCB0-3AFA-4118-90DC-57C440D0EEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126240E7-E17D-4C0C-815D-5B7411D74327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126240E7-E17D-4C0C-815D-5B7411D74327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126240E7-E17D-4C0C-815D-5B7411D74327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126240E7-E17D-4C0C-815D-5B7411D74327}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

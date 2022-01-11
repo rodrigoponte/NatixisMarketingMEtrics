@@ -11,7 +11,7 @@
         /// The SaveVisitorPage.
         /// </summary>
         /// <param name="visitor">The visitor<see cref="VisitorPageRequest"/>.</param>
-        void SaveVisitorPage(VisitorPageRequest visitor);
+        bool SaveVisitorPage(VisitorPageRequest visitor);
 
         /// <summary>
         /// The GetDistinctVisitorsPage.

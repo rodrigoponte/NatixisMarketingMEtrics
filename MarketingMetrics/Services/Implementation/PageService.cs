@@ -28,12 +28,14 @@
         /// The SaveVisitorPage.
         /// </summary>
         /// <param name="visitor">The visitor<see cref="VisitorPageRequest"/>.</param>
-        public void SaveVisitorPage(VisitorPageRequest visitor)
+        public bool SaveVisitorPage(VisitorPageRequest visitor)
         {
             if (string.IsNullOrEmpty(visitor.UrlPage) || string.IsNullOrEmpty(visitor.VisitorId))
-                throw new ArgumentNullException();
+                return false;
 
             _acessos.Add(new VisitorAccessLog() { VisitorId = visitor.VisitorId, UrlPage = visitor.UrlPage, AccessMoment = DateTime.Now });
+
+            return true;
         }
 
         /// <summary>

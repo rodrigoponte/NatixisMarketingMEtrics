@@ -50,11 +50,11 @@
         {
             try
             {
-                return Ok(_service.GetDistinctVisitorsPage(UrlPage));
-            }
-            catch (ArgumentNullException)
-            {
-                return BadRequest("A url must be specified in the search.");
+                var result = _service.GetDistinctVisitorsPage(UrlPage);
+                if(result != null)
+                    return Ok(result);
+                else
+                    return BadRequest("A url must be specified in the search.");
             }
             catch (Exception ex)
             {
@@ -76,12 +76,10 @@
         {
             try
             {
-                _service.SaveVisitorPage(visitor);
-                return Ok();
-            }
-            catch (ArgumentNullException)
-            {
-                return BadRequest("Data provided is invalid.");
+                if(_service.SaveVisitorPage(visitor))
+                    return Ok();
+                else
+                    return BadRequest("Data provided is invalid.");
             }
             catch (Exception ex)
             {
